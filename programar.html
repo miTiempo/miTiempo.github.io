@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="miTiempo.css">
+    <link rel="stylesheet" type="text/css"href="fuentes.css">
+    <title>miTiempo</title>
+</head>
+<body>
+    
+    <div class="secciones">
+        <h1>: miTiempo</h1>      
+    </div>
+
+    
+    <nav class="secciones">
+      <a href="basico.html">Básico</a>
+      <a href="avanzado.html">Avanzado</a>
+      <a href="programar.html">Programar</a>
+    </nav>
+    
+    <div id="div-configuraciones">
+      <div class="secciones">
+        <div class="div-opciones"> 
+          <p class="label-opciones">Tipo de tarea:</p>
+          <p class="label-opciones">Nombre: </p>
+          <p class="label-opciones">Vueltas:</p>
+          <p class="label-opciones">Tiempo por vuelta:</p>
+          <p class="label-opciones">Transición:</p>
+          <p class="label-opciones">Tiempo de tarea:</p>
+        </div>
+        <div class="div-inputs"> 
+          <select  class="listas" id="select-tipo-tarea" name="Tareas">
+            <option value="Yoga">Yoga</option>
+            <option value="Meditación">Meditación</option>
+            <option value="Ejercicio">Ejercicio</option>
+            <option value="Lectura/estudio">Lectura/estudio</option>
+            <option value="Trabajo pesado">Trabajo pesado</option>
+            <option value="Trabajo liviano">Trabajo liviano</option>
+            <option value="Tiempo libre">Tiempo libre</option>
+          </select>
+
+          <input id="nombre-tarea" type="text">
+          <div id="div-info-vueltas">
+          <input id="input-vueltas"type="number" min="1"value="30">
+          <label class="label-input">Descanso</label>
+          <input id="input-tiempo-descanso"type="number"value="0" disabled>
+          <label class="label-input">min   </label> 
+          </div>
+         
+          <input class="input-tiempo" id="input-tiempo-productivo-horas"type="number"min="0" max="24" value="0"> 
+          <label class="label-input">:</label>
+          <input class="input-tiempo" id="input-tiempo-productivo-minutos"type="number" min="0" max="59"value="1">
+          <label class="label-input">:</label>
+          <input class="input-tiempo" id="input-tiempo-productivo-segundos"type="number" min="0" max="59"value="10">
+          
+          <select  class="listas" id="select-transicion" name="Transicion">
+            <option value="0">Ninguno</option>
+            <option value="5000 ">5 segundos</option>
+            <option value="10000" >10 segundos</option>
+            <option value="15000" selected>15 segundos</option>
+            <option value="20000">20 segundos</option>
+          </select> 
+            
+          <label id="tiempo-total-tarea" >00:39:50</label>
+          
+        </div>  
+    </div>
+    <div class="div-botones">
+      <button class="botones" id="boton-agregar-tarea" >Agregar</button>
+      <button class="botones" id="boton-quitar-tarea" >Quitar</button>
+    </div> 
+    <div class="div-resultado">  <!--<button class="botones" id="boton-programar-tarea" value="Desactivado">Desactivado</button>-->
+      
+      <ol id="lista-tareas"></ol>
+      <p id="tiempo-finalizacion" type="number"></p>
+      <div class="div-botones">
+          <button class="botones" id="boton-iniciar-tareas" disabled>Iniciar</button>
+      </div>
+    </div> 
+    </div> 
+      
+     <div class="div-botones">
+        <label class="label-encabezados">Aviso de hora:</label>
+        <button id="boton-activar-aviso-hora" >Desactivado</button>
+      </div>
+    
+    <audio id="cuentaregresiva5" src="cuentaregresiva5_10segs.mp3"></audio>
+    <audio id="cuentaregresiva10" src="cuentaregresiva10.mp3"></audio>
+    <script src="miTiempo.js"></script>
+</body>
+</html>

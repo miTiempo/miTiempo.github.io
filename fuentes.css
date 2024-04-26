@@ -1,0 +1,11 @@
+@font-face {
+   font-family: "lagart";
+   src: url("Fuentes/ChakraPetch-Regular.ttf") format("truetype"); /*truetype es el formato de la letra descargada*/
+   font-weight: 400; /*con esto hacemos referencia al grosor de la letra*/
+}
+
+@font-face {
+   font-family: "lagart";
+   src: url("Fuentes/ChakraPetch-Bold.ttf") format("truetype"); /*truetype es el formato de la letra descargada*/
+   font-weight: 900; 
+}
