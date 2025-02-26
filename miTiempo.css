@@ -6,7 +6,7 @@ body{
    background:linear-gradient(to top, rgb(211, 211, 3),#000);
 
    color:rgb(250, 230, 0);
-
+   height:930px;
 }
 
 
@@ -32,6 +32,7 @@ a {
 
 p {
    font-size: 20px;
+  
 }
 
 input ,select{
@@ -64,14 +65,14 @@ button {
    border-radius: 15px;
       
 }
-form {
+form  {
 
    width:100%;
    box-sizing: border-box;
    max-width: 500px;
    margin: auto;
    margin-top: 50px;
-   background-color: rgb(223, 219, 9);
+   /*background-color: rgb(223, 219, 9);*/
    padding: 50px;
 }
 
@@ -81,7 +82,23 @@ li{
    font-size: 13px;
 }
 
+footer{
+   text-align: center;
+   color: #000;
+}
 
+.caja {
+margin: auto;
+margin-top: 10px;
+width: 450px;
+height: 450px;
+border: solid;
+border-bottom:3px solid  rgb(209, 209, 20) ;
+padding: 25px;
+color:rgb(250, 230, 0);
+box-shadow: 0 0 50px 0px  #000;
+
+}
 
 .boton_presionado{
    background-color: rgb(196, 180, 221);
@@ -104,8 +121,6 @@ li{
 margin: auto;
 margin-top: 10px;
 width: 450px;
-
-
 padding: 25px;
 display: flex;
 color:rgb(250, 230, 0);
@@ -164,13 +179,13 @@ color:rgb(250, 230, 0);
 
 }
 
-#div-configuraciones{margin: auto;
+#div-configuraciones{
+margin: auto;
 margin-top: 10px;
 width: 450px;
 border: solid;
 border-bottom:3px solid  rgb(209, 209, 20) ;
 padding: 25px;
-
 color:rgb(250, 230, 0);
 box-shadow: 0 0 50px 0px  #000;
 
