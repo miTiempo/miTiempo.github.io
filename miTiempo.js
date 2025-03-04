@@ -264,7 +264,8 @@ document.getElementById("boton-agregar-tarea").addEventListener("click",function
    
    actualizaTiempoFinalizacion(tiempo_total_actividades );
    console.log("Tiempo total de actividades "+milisegundosAHMS(tiempo_total_actividades));
-   document.getElementById("boton-iniciar-tareas").disabled=false;   
+   document.getElementById("boton-iniciar-tareas").disabled=false;
+   document.getElementById("boton-iniciar-tareas").style.display = "block";   
 }
 );
 
@@ -279,6 +280,7 @@ document.getElementById("boton-quitar-tarea").addEventListener("click",function 
    if(listado_tareas.length===1)
          {document.getElementById("tiempo-finalizacion").innerHTML="";
          document.getElementById("boton-iniciar-tareas").disabled=true;
+         document.getElementById("boton-iniciar-tareas").style.display = "none";  
          }
    listado_tareas.pop();
    console.log("Tiempo total de actividades "+milisegundosAHMS(tiempo_total_actividades));

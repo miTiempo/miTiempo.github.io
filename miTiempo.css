@@ -1,61 +1,56 @@
 *{
-      font-family: lagart;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   
+   font-family: lagart;
 }
-body{
-   
+
+body{  
    background:linear-gradient(to top, rgb(211, 211, 3),#000);
-
    color:rgb(250, 230, 0);
-   height:930px;
-}
-
-
-
-h2{
-   margin-left: 50px;  
-   margin-top: 30px;
+   min-height:100vh; /*hace que el largo sea el de la ventana permitiendo crecer*/  
 }
 
 h1{
-   margin: auto;
+   margin: 30px;
+   text-align: center;
    font-weight: 900;
    font-size:45px;
-   text-shadow: 0 0 45px  yellow;
+   text-shadow: 0 0 45px  rgb(255, 255, 171);
+}
 
+nav {
+   text-align: center;
+   font-size: 22px;
+   margin-bottom: 20px;
 }
 
 a {
-   margin:auto;
+   padding: 20px;
    color:rgb(250, 230, 0);
    text-decoration: none;
 }
 
 p {
    font-size: 20px;
-  
+   padding-top:20px ;
+   font-weight: 900;
 }
 
 input ,select{
-
-   height: 23px;
-   width: 40px;
+   height: 25px;
+   width: 222px;
    font-size: 15px;
    text-align: center;
-   margin: 9px 3px;
-   padding: 0px;
-   background-color: rgb(241, 241, 81);
-   font-weight:600;
-
+   background-color: rgb(243, 243, 159);
+   font-weight:600;   /*peso de la letra*/
 }
 
 select{
-   width: 230px;
-
+   width: 222px;
 }
 
 button {
-   margin: 7px; 
-   margin-left: 20px;
    width: 100px;
    height: 40px;
    background-color: rgb(241, 241, 81);
@@ -63,10 +58,10 @@ button {
    color: rgb(53, 54, 1);
    border: 2px solid  rgb(231, 231, 106);
    border-radius: 15px;
-      
+   margin: 10px;   
 }
-form  {
 
+form  {  /*para login*/
    width:100%;
    box-sizing: border-box;
    max-width: 500px;
@@ -76,7 +71,6 @@ form  {
    padding: 50px;
 }
 
-
 li{
    color:black;
    font-size: 13px;
@@ -85,18 +79,69 @@ li{
 footer{
    text-align: center;
    color: #000;
+   font-weight: 400;
 }
 
-.caja {
-margin: auto;
-margin-top: 10px;
-width: 450px;
-height: 450px;
-border: solid;
-border-bottom:3px solid  rgb(209, 209, 20) ;
-padding: 25px;
-color:rgb(250, 230, 0);
-box-shadow: 0 0 50px 0px  #000;
+section{
+   margin: auto;
+   margin-top: 10px;
+   width: 500px;
+   border: solid;
+   border-bottom:3px solid  rgb(209, 209, 20) ;
+   padding: 25px;
+   color:rgb(250, 230, 0);
+   box-shadow: 0 0 50px 0px  #000;
+}
+
+ol{
+   margin-left: 50px;
+}
+
+.section-cajaPrincipal {
+   height: auto;
+}
+
+.section-cajaSecundaria{
+   margin-top: 20px;
+   display: flex;
+   justify-content: center; /*centra horizontalmente*/
+   align-items: center;/*align-item es para verticalmente*/
+   gap: 5px; /*separacion entre elementos*/
+   height: 70px;
+}
+
+.div-opciones-inputs{
+   display: flex;
+   margin-top: 15px;
+}
+
+.div-inputs, .div-opciones{
+   width: 222px;
+}
+.div-opciones{
+   font-size: 20px;
+}
+
+.div-opciones-label, .div-inputs-item{
+   height:50px ;
+}
+
+.input-pequeño, .label-input{
+   width: 51px;
+   margin-right: 9px;
+}
+
+.div-resultado{
+   margin-top:20px;
+
+}
+
+.div-botones{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #000;
+   font-weight: 600;
 
 }
 
@@ -104,152 +149,31 @@ box-shadow: 0 0 50px 0px  #000;
    background-color: rgb(196, 180, 221);
 }
 
-
-.seccion-nav, .encabezados {
-   margin: auto;
-   margin-top: 10px;
-   width: 450px;
-   border: solid;
-   border-bottom:3px solid  rgb(163, 163, 10) ;
-   padding: 25px;
+#div-info-vueltas{
    display: flex;
-   color:rgb(250, 230, 0);
-   box-shadow: 0 0 50px 0px  #000;
-
-}
-.secciones{
-margin: auto;
-margin-top: 10px;
-width: 450px;
-padding: 25px;
-display: flex;
-color:rgb(250, 230, 0);
-
-}
-
-.div-inputs, .div-opciones{
-   height:300px ;
-}
-.div-opciones{
-   font-size: 20px;
-   width: 200px;
-}
-
-.div-inputs{
-   width: 250px;
-}
-
-
-.listas{
-   display: block;
-   
-}
-
-
-.label-input{
-   color:rgb(250, 230, 0);
-   width: 10%;
-}
-.input-tiempo{
-   padding: 0px;
-   border:0px;
-   width: 15%;
-   height: 23px;
-
-}
-.label-encabezados{
-   
-   margin: 20px;
-   
-}
-
-.div-resultado{
-   margin: auto;
-   width:100%;
-
-   
-}
-.div-botones{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 20px;
-   color: #000;
-   font-weight: 600;
-
-}
-
-#div-configuraciones{
-margin: auto;
-margin-top: 10px;
-width: 450px;
-border: solid;
-border-bottom:3px solid  rgb(209, 209, 20) ;
-padding: 25px;
-color:rgb(250, 230, 0);
-box-shadow: 0 0 50px 0px  #000;
-
-}
-#select-tipo-tarea{
-   margin-top: 20px;
-   width: 90%;
-}
-
-#nombre-tarea{
-   margin-top: 20px;
-   width: 90%;
-   border: 1px;
-   display: block;
-}
-
-#input-vueltas {
-   
-   margin-top: 20px ;
-   height: 23px;
-}
-#label-input-hs{
-   display: inline-block;
-}
-
-
-#select-transicion{
-   margin-top: 15px;
-   width: 90%;
-}
-
-#input-checkbox{
-   margin-left: 0px;
-   display: block;
 }
 
 #tiempo-total-tarea{
-
-   display: block;
-   margin-top: 15px;
    letter-spacing: 2px;
+   font-size: 20px;
 
 }
 
 #tiempo-finalizacion{
-   margin: auto;
-   text-align: center;
+   color: #000;
+   margin-bottom: 20px;
+   font-weight: 900;
+   font-size: 20px;
+   letter-spacing: 2px;
+   text-align: center;   
+}
+
+#boton-iniciar-tareas{
+   display: none;
+}
+
+#label-boton {
    color: #000;
    font-weight: 900;
-   font-size: large;
-   letter-spacing: 2px;
- 
-   
-}
 
-
-.formulario-input{
-   width: 100%; /*con esta forma hacemos que un elemento inline pase a otro renglon*/
 }
-.formulario-submint{
-   width: 35%;
-   margin: 3% 30%;
-   letter-spacing: 5px;
-   text-transform: uppercase;
-   font-weight: 900;
-}
-
